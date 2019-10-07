@@ -1,0 +1,119 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 07 October 2019 20:27:06
+*/
+
+
+#menu {
+    font: normal 13px Verdana, Arial, sans-serif;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0017/182141/menu_bg.jpg?v=0.0.2') repeat-x;
+    width: 100%;
+/*    height: 46px;*/
+    z-index: 1; /* for IE7 */
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#mainmenu nav li {
+    list-style-type: disc;
+}
+
+#mainmenu nav li li li {
+    list-style-type: none;
+}
+    
+#menu a.home {
+    padding: 13px 10px;
+    height:20px;
+    background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0016/182140/menu_bg_hover.jpg?v=0.0.2') repeat-x;
+}
+
+#menu > li  > a {
+    float: left;
+    display: block;
+/*    padding: 15px 45px; */
+    padding: 15px 44px;
+    /*background: url('http://www.dpac.tas.gov.au/__data/assets/image/0020/182144/menu_separator.png?v=0.0.2') no-repeat center right;*/
+}
+
+#menu > li:hover  > a{
+    color: #fff;
+    background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0016/182140/menu_bg_hover.jpg?v=0.0.2') repeat-x;
+}
+
+#menu div ul > li {
+    margin: 10px 0 15px;
+    display: list-item;
+}
+
+#menu div > ul > li {
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+#menu li li {
+    font-weight: normal;
+}
+
+.dropdown_1column, 
+.dropdown_2columns, 
+.dropdown_3columns, 
+.dropdown_4columns,
+.dropdown_5columns {
+    margin: 0px auto;
+    float: left;
+    position: absolute;
+    left: -999em; /* Hides the drop down */
+    text-align: left;
+  margin-top: 36px;
+    border-top: none;
+    z-index: 100000;
+    box-shadow:0px 0px 19px 0px #333;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    background: #121B2D;
+}
+
+.dropdown_1column  {width: 140px;}
+.dropdown_2columns {width: 747px;}
+.dropdown_3columns {width: 420px;}
+.dropdown_4columns {width: 680px;}
+.dropdown_5columns {width: 700px;}
+
+#mainmenu { color: #FFF; }
+
+#menu li:hover .dropdown_1column, 
+#menu li:hover .dropdown_2columns, 
+#menu li:hover .dropdown_3columns,
+#menu li:hover .dropdown_4columns,
+#menu li:hover .dropdown_5columns {
+    left: 0px;
+    top: 10px;
+}
+
+.col_2 {
+    float: left;
+    padding: 10px;
+    border-right: #242B3B 1px solid;
+}
+
+.col_2 + .col_2 {
+    border-right: none;
+}
+
+.top {width:331px;}
+.col_1 {width:218px;}
+.col_2 {width: 343px;}
+.col_3 {width:410px;}
+.col_4 {width:550px;}
+.col_5 {width:690px;}

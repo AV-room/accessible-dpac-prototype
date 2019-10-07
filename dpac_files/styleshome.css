@@ -1,0 +1,126 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 07 October 2019 20:27:06
+*/
+
+
+/* RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+/* STYLES */
+body {
+    font-family:Verdana,Tahoma,arial,sans-serif;
+    font-size: 13px;
+    background:#E6E8EB url('http://www.dpac.tas.gov.au/__data/assets/image/0004/188518/page_bg.png?v=0.1.1') repeat-x;
+    color:#333333;
+}
+ul,ol        { margin: 0px 0px 0px 20px; }
+td { padding:4px;  font-size: 11px;}
+
+h1, h2, h3    { font-family:Verdana,Tahoma,arial,sans-serif; font-weight:normal; }
+h4        { color:#666; font-size:1em; }
+h3        { color:#666; font-size:1.3em; }
+h2        { color:#111; font-size:1.5em; }
+h1        { color:#333; font-size:1.8px; }
+p        { margin: 0; padding: 0; }
+a        { color: #5f525d; text-decoration: underline; }
+a:hover        { color: #d12c26; text-decoration: underline; }
+img        { border:0; }
+code,kbd    { font-family:'Courier New',Courier; border:#999 1px solid; padding:2px; background:#ebebeb; }
+samp        { font-family:'Courier New',Courier; font-size:0.9em; }
+del        { text-decoration:line-through; }
+q, em, cite    { font-style:italic; }
+ins        { text-decoration:underline; }
+.clear        {clear:both;}
+hr        { border:0; border-bottom: #999 1px dashed; }
+.picture    {}
+.right        {float:right;}
+
+/* column-1 (left) menu accordion styles */
+.accordion li {list-style: none;}
+.accordion {font: normal 12px Verdana,Arial, sans-serif;}
+.accordion, .accordion li {margin: 0; padding: 0; border: none;}
+.accordion a {padding: 5px 10px 5px 30px; text-decoration:none; display: block; color: #3f4465; position: relative; border-bottom: 1px dotted #3f4465; background: url('') no-repeat 14px center;}
+.accordion a.dcjq-parent {}
+.accordion a.dcjq-parent:hover {text-decoration: underline;}
+.accordion a.dcjq-parent.active {color:#d12c26;border:none;outline:none;font-weight:bold;}
+.accordion a .dcjq-icon {position: absolute; top: 50%; left: 14px; width: 34px; margin-top: -17px; height: 34px; background: url('') no-repeat 0 center;}
+.accordion a.dcjq-parent.active .dcjq-icon {background: url('') no-repeat 0 center; }
+.accordion a:hover {color: #d12c26; text-decoration: underline; }
+.accordion a:active{ border:none;outline:none; }
+.accordion ul a, .accordion ul ul a{border:0 !important; font-size:11px;}
+.accordion ul ul a{background:url('http://www.dpac.tas.gov.au/__data/assets/image/0005/188519/bullet3.gif?v=0.1.1') no-repeat 15px center;}
+
+
+/* Slider used for rotating news items */
+/* Basic jQuery Slider essential styles */
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+/* end bjqs essential css */
+/* bjqs fading slider  extra css */
+#banner-fade, #banner-slide { margin: 15px 0; position:relative; }
+ul.bjqs-controls.v-centered li a{ display:block; padding:10px;background:#fff;color:#000;text-decoration: none; }
+ul.bjqs-controls.v-centered li a:hover{background:#000;color:#fff;}
+ol.bjqs-markers li a{ padding:3px 5px; background:#666; color:#fff; margin:2px; text-decoration: none; font-size:10px; }
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{ background: #d12c26; }
+ol.bjqs-markers { position:absolute; top:2px; left:604px; }
+p.bjqs-caption{    background: rgba(255,255,255,0.5); }
+.bjqs figure    { padding: 0 10px 0 0; border: 0; float: left; margin: 0; }
+.bjqs p        { color:#5f525d; }
+/* end bjqs fading slider extra css */
+
+/* More news text for 'see all news stories' under rotating news items */ 
+.more-news        { text-align: right; }
+.more-news a        { color:#5f525d; }
+.more-arrows        { color:#d12c26; }
+
+
+table.ref {
+    border-collapse: collapse;
+    width: 100%;
+}
+table.ref tr:nth-child(2n+1) {
+    background-color: #f1f1f1;
+}
+table.ref tr:nth-child(2n) {
+    background-color: #ffffff;
+}
+
+table.ref th {
+    background-color: #555555;
+    border: 1px solid #555555;
+    color: #ffffff;
+    padding: 3px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.ref td {
+    border: 1px solid #d4d4d4;
+    padding: 7px 5px;
+    vertical-align: top;
+}
+table.ref {
+    vertical-align: bottom;
+}

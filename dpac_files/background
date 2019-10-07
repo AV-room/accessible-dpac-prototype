@@ -1,0 +1,137 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 07 October 2019 20:27:05
+*/
+
+
+.bodywidth              { width: 980px; margin: 0 auto; clear: both; }  /* width for site content container */
+.bodywidthfull          { width: 980px; margin: 0 auto; clear: both; }  /* width for containers that need to go full witdh of background */
+
+#top {
+   left: -2222px;
+    position: absolute;
+}
+#topmenu        { padding:0; height:38px; background:#091b35; opacity:0.9; filter:alpha(opacity=90); /* For IE8 and earlier */ }
+#topmenu nav        { float: right; margin: 12px 0 0 0; font-size:12px; }
+#topmenu nav li        { list-style-type: none; display: inline; padding: 0px 15px; margin: 0; border-right:#fff 1px solid; }
+#topmenu nav li.last    { border:none; }
+#topmenu a,#topmenu:visited    { color: #ffffff; text-decoration: none; }
+#topmenu a:hover    { text-decoration: underline; color: #fff; }
+#topmenu nav li.aminus, #topmenu nav li.aplus { border:none; padding:0 5px; }
+#topmenu nav li.aminus    {font-size:11px;}
+#topmenu nav li.aplus    {font-size:13px;}
+#topmenu nav li.aminus a:hover, #topmenu nav li.aplus a:hover { text-decoration: none; }
+#topmenuleft        { float: left; margin-left:13px; width: 205px; height:38px; background:#fff; opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ }
+        
+/* HEADER */
+#headerwrap        { position:relative; width: 100%; height: 236px;  }
+#mainheader        { padding: 0 0 0 0; color: #fff; }
+#search            { position:absolute; right:40px; bottom:0px; }
+#websitetitle        { float: right; margin: 60px 40px 0 0; }
+#websitetitle h1    { font-size: 2.3em; font-weight: normal; font-family:Verdana,Tahoma,arial,sans-serif; color:#ffffff; line-height:135%; }
+#websitetitle h2    { font: 1.462em "Georgia"; font-style: italic; font-weight: normal; margin: -3px 0 0 0; }
+#mainheader nav        { float: right; font: 1.615em "Ubuntu", arial,; margin: 8px 0 0 0; }
+#mainheader nav li    { list-style-type: none; display: inline; margin: 0 0 0 65px; }
+#mainheader a,#mainheader:visited{ color: #2f2f2f; }
+#mainheader a:hover    { text-decoration: none; color: #7e7e7e; }
+#headerleft        { float: left; width: 205px; height:236px; background:#fff url('http://www.dpac.tas.gov.au/__data/assets/image/0004/182137/logo.gif?v=0.0.2') no-repeat center center; padding:0px; margin-left:13px; opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ }
+hgroup#websitetitle h1 { position:absolute; left:-2222px;  }
+
+
+/* SEARCH */
+.search_field        { display: inline-block; border: 1px inset #ccc; width:390px; padding:0; border: #666 1px solid; font-family:Verdana, Arial, sans-serif; }
+.search_field input    { border: none; background: #fff url('http://www.dpac.tas.gov.au/__data/assets/image/0007/182149/search_bg.png?v=0.0.2') repeat-x; width:378px; padding:10px 6px; color:#999; font-size:15px; }
+.search_field button    { border: none; background: none; position: absolute; top:7px; right:0px;}
+    
+/* MAIN MENU */
+#mainmenu        { height:46px; padding: 0; color: #2f2f2f; background:transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0005/182183/menu_bg.jpg?v=0.0.2') repeat-x; } 
+#mainmenu nav        { float: left; margin: 0; }
+#mainmenu nav li    { list-style-type: none; display: inline; margin: 0; }
+#mainmenu a,#mainmenu:visited    { color: #ffffff; }
+#mainmenu a:hover    { text-decoration: none; color: #7e7e7e; }
+#mainmenuleftcolumn    { float: left; width: 205px; height:45px; padding:0; margin-left:13px; }
+#mainmenuleftcolumn h3    { font-size: 20px ; font-weight: normal; color:#fff; text-align: center; padding:8px 0 0 0; font-family:Verdana,Arial,sans-serif; }
+        
+/* FOOTER */
+#footerwrap            {  height: 183px; background: #091b35 url('http://www.dpac.tas.gov.au/__data/assets/image/0015/182130/footer_bg.png?v=0.0.2') repeat-x 0 0; margin: 0; text-align: left;}
+#footerleft        { width:217px; height:120px; float:left; margin-top:8px; border-right: #fff 1px solid; background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0003/182136/logo_footer.png?v=0.0.2') no-repeat center center; }
+#footerright        { width:730px; float:left; padding: 20px 0 0 30px; background: #091b35 url('http://www.dpac.tas.gov.au/__data/assets/image/0015/182130/footer_bg.png?v=0.0.2'); height: 163px;  }
+#footerright p        { clear:both; font-size:0.86em; margin-top:8px; line-height:120%; }
+#mainfooter            { text-shadow: 0px 0px 1px #000; color:#fff; }
+#mainfooter nav         { font-size: 1em; padding: 0 0 20px 0; margin:0; }
+#mainfooter ul            { padding:0; margin: 0;}
+#mainfooter li            { list-style-type:none; float:left; margin: 0 10px 0 0; font-size:12px; border-right: #fff 1px solid; padding:0 10px 0 0;}
+#mainfooter a, #mainfooter a:visited { color: #fff; text-decoration: none; }
+#mainfooter a:hover    { text-decoration: underline; }
+
+/* PAGE CONTENT */
+.wrapper        { 
+width: 980px; 
+background:#fff url('http://www.dpac.tas.gov.au/__data/assets/image/0016/182113/bgimage_home.jpg?v=0.0.2') center top no-repeat; 
+background:#fff url('http://www.dpac.tas.gov.au/__data/assets/image/0006/187953/banner06.jpg') center top no-repeat; 
+  
+margin: 0 auto; 
+text-align: left;
+}
+/* Adjust template02 for different bg image or add additional templates as required */
+.template02        { background:#fff url('http://www.dpac.tas.gov.au/__data/assets/image/0015/182112/bgimage_02.jpg?v=0.0.2') center top no-repeat;}
+.column-container    { position: relative; overflow: auto; overflow-x:hidden; padding: 0px 12px 15px 12px; zoom: 1; background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0003/182127/columns_bg.png?v=0.0.2') repeat-y; clear:left; } /* zoom fix for ie6 */
+.column-1 {
+    float: left;
+    width: 205px;
+
+ padding-top: 75px;
+
+    border: #cfcfcf 0px solid;
+    border-top: 0;
+    background:#fff url('http://www.dpac.tas.gov.au/__data/assets/image/0018/182133/leftcolumntop.jpg?v=0.0.2') no-repeat left -15px;
+}
+
+.column-2        { float: right; width: 712px; padding-top: 10px; padding-left:20px; padding-right:5px;  margin-top: 15px;  background: #fff; min-height:465px; }
+.column-1-pagecurl    { position: absolute; bottom: 0; left: 13px; height: 30px; width: 205px; background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0017/182132/leftcolumn_botcurl.png?v=0.0.2') no-repeat right bottom;} 
+.column-1-bottom    { position: absolute; bottom: 0; left: 13px; height: 1px; width:205px; background: #cfcfcf;} 
+.column-2-bottom    { position: absolute; bottom: 0; right: 13px; height: 1px; width:796px; background:#cfcfcf; }
+.footer            { width: 100%; clear: both; background: #fff; height:10px; margin-top: 1px;}
+
+.column-1-title        {height:45px;margin-bottom: 10px; position:relative;padding-top:3px;}
+.column-1 h3,.column-1 h4,.column-1 p { padding: 0 10px; }
+.column-1 h3        { font-size: 19px; font-weight: normal; margin: 0; color:#fff; position:absolute; bottom:0px; }
+.column-1 h4        { font-size: 12px; font-weight: bold; margin: 0; color:#fff; position:absolute; bottom:0px; }
+.column-1 h5        { font-size: 13px; font-weight: bold; margin: 10px; color:#3f4465;}
+.column-1 p        { line-height: 135%; margin: 0 0 15px 0; color:#3f4465; font-size:12px; }
+
+.column-2 h1        { margin:20px 0 5px 0; color:#091b35; font-size:25px; }
+.column-2 h1 span    { color:#d12c26; }
+.column-2 h2        { margin:20px 0 15px 0; color:#091b35; font-size:20px; }
+.column-2 article    { width:100%; height:124px; clear: both; margin: 0 0 20px 0; overflow: hidden; background:#ececec; }
+.column-2 article .article-footer { padding-top:10px; }
+.column-2 figure    { padding: 0; border: 0px #dbdbdb solid; float: right; margin: 10px 0 15px 10px; clear:right; }
+.column-2 figcaption    { color:#666; font-size:11px; padding-top:3px; }
+.column-2 header    { margin:10px 0 0 0; }
+.column-2 p        { line-height: 135%; font-size:12px; color:#091b35; padding:5px 0; }
+.column-2 h3        { font-size: 16px; margin: 10px 0 6px 0; color: #091b35; font-weight: normal; }
+.column-2 h4        { font-size: 13px; color: #091b35; font-weight: bold; padding: 5px 0; }
+.column-2 header a    { color:#091b35; }
+.column-2 header a:hover,.column-2 header a:hover h5    { color:#d12c26; }
+.column-2 nav p        { font-size:9px;padding-bottom:12px; border-bottom:#999 1px solid; }
+p.readmore        { font-size: 10px; font-weight: normal; color: #d12c26; margin:0 20px; float: right; }
+p.readmore a        { color: #5f525d; text-decoration: underline; }
+p.readmore a:hover    { color: #d12c26; text-decoration: underline; }
+
+.links-box        { float:left; background:#F5F5F5; width:220px; margin: 10px 18px 8px 0px; font-size:12px; }
+.links-box p {padding: 15px 0px 0px 15px; }
+.links-box-right    { width:220px; margin-right:0; }
+.links-box-header    { height:18px; width:204px; background:#2B374A url('http://www.dpac.tas.gov.au/__data/assets/image/0020/182135/links-box_hd_bg.png?v=0.0.2') repeat-x; color:#fff; padding:8px; font-size:13px; }
+.links-box-content    { height:405px; }
+.scroll            { overflow-y: scroll; overflow-x: hidden; }
+.links-box h3        { background:#2B374A url('http://www.dpac.tas.gov.au/__data/assets/image/0020/182135/links-box_hd_bg.png?v=0.0.2') repeat-x; color:#fff; padding:8px; font-size:0.9em; }
+.links-box ul        { padding:10px 0px; }
+.links-box li        { list-style-image: url('http://www.dpac.tas.gov.au/__data/assets/image/0015/182121/bullet-red.png?v=0.0.2'); padding:5px 0; border-bottom:#ccc 1px dotted; }
+.links-box li a        { text-decoration: none; color:#3f4465; }
+.links-box li a:hover    { text-decoration: underline; color:#d12c26; }
+
+/* Container for Facebook/Twitter feed */
+#activityFeed ul    { padding: 0; margin: 0; list-style: none; }
+#activityFeed ul li    { list-style: none; background-position: 10px center !important; background-repeat: no-repeat !important; margin-bottom: 1px !important; padding: 5px 5px 5px 38px !important; font-size: 11px; }

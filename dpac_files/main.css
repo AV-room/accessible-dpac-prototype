@@ -1,0 +1,381 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 07 October 2019 20:27:05
+*/
+
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.results-pagination {
+word-wrap: break-word;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+table tr td ul {
+list-style-type:disc;
+margin:0 0 0 20px;
+}
+
+ table.tBorder tbody tr td{
+    border: 1px solid black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+a.acc {
+
+position:absolute;
+margin-left:-9999px;
+
+}
+
+ul#divisionMenu
+{
+    font: 12px Verdana,Arial,sans-serif;
+margin:0px;
+}
+ul#divisionMenu li {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul#divisionMenu li{
+    list-style: none outside none;
+    list-style-type:none;
+}
+
+ul#divisionMenu li a {
+    background: url("http://www.dpac.tas.gov.au/__data/assets/image/0004/182119/bullet.gif?v=0.0.2") no-repeat scroll 14px center transparent;
+    border-bottom: 1px dotted #3F4465;
+    color: #3F4465;
+    display: block;
+    padding: 5px 10px 5px 30px;
+    position: relative;
+    text-decoration: none;
+}
+
+ul#divisionMenu li a.selected {
+    background: url("http://www.dpac.tas.gov.au/__data/assets/image/0003/182118/bullet_down.gif?v=0.0.2") no-repeat scroll 14px center transparent;
+    color: #D12C26;
+    display: block;
+    padding: 5px 10px 5px 30px;
+    position: relative;
+    text-decoration: none;
+    border-bottom:none;
+}
+
+ul#divisionMenu li.selected {
+    border-bottom: 1px dotted #3F4465;
+
+}
+
+ul#divisionMenu li a:hover {
+    text-decoration: underline;
+    color: #D12C26;
+}
+
+
+
+ul#divisionMenu li ul li a{
+border:none;
+font-size:11px;
+}
+
+
+div#banner-fade h5 {
+    width:400px;
+}
+
+div#banner-fade2 h5 {
+   width:400px;
+
+}
+
+
+.no_bullet table tr td ul {
+    list-style-type: none;
+}
+
+.floatLeft {
+float: left;
+margin: 10px 10px 10px 0px;
+}
+
+.floatRight {
+float: right;
+margin: 10px 0px 10px 10px;
+}
+
+a.icon_pdf   { 
+  padding: 0 25px 0 0; 
+  display: inline-block;   
+  background-image: url("http://www.dpac.tas.gov.au/__data/assets/image/0003/208254/newpdf.gif?v=0.0.2"); 
+  background-repeat: no-repeat; 
+  background-position: right 0; 
+}
+
+a.icon_doc { 
+  padding: 0 25px 0 0; 
+  display: inline-block;   
+  background-image: url("http://www.dpac.tas.gov.au/__data/assets/image/0006/208266/icon_word.png?v=0.0.2"); 
+  background-repeat: no-repeat; 
+  background-position: right 0; 
+}
+
+a.icon_ppt { 
+  padding: 0 25px 0 0; 
+  display: inline-block;   
+  background-image: url("http://www.dpac.tas.gov.au/__data/assets/image/0005/208265/icon_powerpoint.png?v=0.0.2"); 
+  background-repeat: no-repeat; 
+  background-position: right 0; 
+}
+
+a.icon_file { 
+  padding: 0 25px 0 0; 
+  display: inline-block;   
+  background-image: url("http://www.dpac.tas.gov.au/__data/assets/image/0004/208264/icon_file.png?v=0.0.2"); 
+  background-repeat: no-repeat; 
+  background-position: right 1px; 
+}
+
+a.icon_xls { 
+  padding: 0 20px 0 0; 
+  display: inline-block;   
+  background-image: url("http://www.dpac.tas.gov.au/__data/assets/image/0007/214918/icon_excel.png?v=0.1.1"); 
+  background-repeat: no-repeat; 
+  background-position: right 1px; 
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.tabular td{
+    border:1px solid #ccc;
+}
+.tabular th {
+    padding:5px;
+    border:1px solid #ccc;
+    background-color:#eee;
+}
+
+.well {
+    
+    padding:10px;
+    border:1px solid #ccc;
+    background-color:#eee;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-style:italic;
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+-ms-word-break: break-all;
+        content:  attr(href);
+
+    }
+ 
+
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
