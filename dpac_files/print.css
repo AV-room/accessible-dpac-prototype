@@ -1,0 +1,52 @@
+body {
+background:none;
+}
+
+.wrapper {
+background:none;
+}
+
+#topmenu {
+display: none;
+}
+
+#headerwrap {
+display: none;
+}
+
+#mainmenu {
+display: none;
+}
+
+.column-container {
+background: none;
+}
+
+.column-1 {
+display: none;
+}
+
+.column-2 {
+width: 100%;
+border: none;
+}
+
+.column-2 nav{
+display: none
+}
+
+.column-2-bottom {
+width: 100%
+}
+
+#footerwrap {
+display: none;
+}
+
+.addthis_toolbox {
+display: none;
+}
+
+.addthis_default_style {
+display: none;
+}
