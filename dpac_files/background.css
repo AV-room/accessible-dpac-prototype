@@ -145,7 +145,7 @@ p.readmore a:hover    { color: #d12c26; text-decoration: underline; }
 .news-container {
   background-color: #ececec;
   max-width: 728px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .news-container ul {
