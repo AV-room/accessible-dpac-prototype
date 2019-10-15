@@ -5,6 +5,19 @@
   Page generated: 13 October 2019 00:23:29
 */
 
+/* RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+
 
 .bodywidth              { width: 980px; margin: 0 auto; clear: both; }  /* width for site content container */
 .bodywidthfull          { width: 980px; margin: 0 auto; clear: both; }  /* width for containers that need to go full witdh of background */
@@ -105,9 +118,6 @@ text-align: left;
 .column-2 h1        { margin:20px 0 5px 0; color:#091b35; font-size:25px; }
 .column-2 h1 span    { color:#d12c26; }
 .column-2 h2        { margin:20px 0 15px 0; color:#091b35; font-size:20px; }
-.column-2 article    { width:100%; height:124px; clear: both; margin: 0 0 20px 0; overflow: hidden; background:#ececec; }
-.column-2 article .article-footer { padding-top:10px; }
-.column-2 figure    { padding: 0; border: 0px #dbdbdb solid; float: right; margin: 10px 0 15px 10px; clear:right; }
 .column-2 figcaption    { color:#666; font-size:11px; padding-top:3px; }
 .column-2 header    { margin:10px 0 0 0; }
 .column-2 p        { line-height: 135%; font-size:12px; color:#091b35; padding:5px 0; }
@@ -131,6 +141,34 @@ p.readmore a:hover    { color: #d12c26; text-decoration: underline; }
 .links-box li        { list-style-image: url('http://www.dpac.tas.gov.au/__data/assets/image/0015/182121/bullet-red.png?v=0.0.2'); padding:5px; border-bottom:#ccc 1px dotted; }
 .links-box li a        { text-decoration: none; color:#3f4465; }
 .links-box li a:hover    { text-decoration: underline; color:#d12c26; }
+
+.news-container {
+  background-color: #ececec;
+  max-width: 728px;
+  margin-top: 20px;
+}
+
+.news-container ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+}
+
+.news-container ul li article {
+  padding: 20px;
+}
+
+.news-container figure {
+  text-align: center;
+}
+
+.news-container figure img {
+  width: 197px;
+  height: 115px;
+}
+
 
 /* Container for Facebook/Twitter feed */
 #activityFeed ul    { padding: 0; margin: 0; list-style: none; }
