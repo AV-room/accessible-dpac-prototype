@@ -163,6 +163,10 @@ p.readmore a:hover    { color: #d12c26; text-decoration: underline; }
   padding: 20px;
 }
 
+.news-container ul li article header a {
+  font-weight: 700;
+}
+
 .news-container figure {
   text-align: center;
 }
