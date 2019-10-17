@@ -129,12 +129,11 @@ ul#divisionMenu li.selected {
 
 }
 
-ul#divisionMenu li a:hover {
+ul#divisionMenu li a:hover,
+ul#divisionMenu li a:focus {
     text-decoration: underline;
     color: #D12C26;
 }
-
-
 
 ul#divisionMenu li ul li a{
 border:none;

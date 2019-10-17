@@ -23,30 +23,43 @@
     text-decoration: none;
 }
 
-#mainmenu nav li {
-    list-style-type: disc;
+#mainmenu > nav ul {
+    list-style: none;
 }
 
-#mainmenu nav li li li {
-    list-style-type: none;
+
+#mainmenu > nav > ul#menu > li {
+    float: left;
+    display: block;
+    padding: 15px 36px;
+}
+
+#mainmenu > nav > ul#menu > li:focus,
+#mainmenu > nav > ul#menu > li:focus-within {
+    box-shadow: inset 0px -8px 0px -4px #ccc;
+}
+
+#mainmenu > nav > ul#menu > li:hover,
+#mainmenu > nav > ul#menu > li:focus,
+#mainmenu > nav > ul#menu > li:focus-within {
+    background: transparent url(http://www.dpac.tas.gov.au/__data/assets/image/0016/182140/menu_bg_hover.jpg?v=0.0.2) repeat-x;
+}
+
+#mainmenu > nav > ul#menu > li:hover .dropdown_2columns,
+#mainmenu > nav > ul#menu > li:focus-within .dropdown_2columns {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+#mainmenu > nav > ul#menu > li  ul li:hover a,
+#mainmenu > nav > ul#menu > li  ul li a:focus {
+    text-decoration: underline;
 }
     
 #menu a.home {
     padding: 13px 10px;
     height:20px;
-    background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0016/182140/menu_bg_hover.jpg?v=0.0.2') repeat-x;
-}
-
-#menu > li  > a {
-    float: left;
-    display: block;
-/*    padding: 15px 45px; */
-    padding: 15px 36px;
-    /*background: url('http://www.dpac.tas.gov.au/__data/assets/image/0020/182144/menu_separator.png?v=0.0.2') no-repeat center right;*/
-}
-
-#menu > li:hover  > a{
-    color: #fff;
     background: transparent url('http://www.dpac.tas.gov.au/__data/assets/image/0016/182140/menu_bg_hover.jpg?v=0.0.2') repeat-x;
 }
 
@@ -71,12 +84,15 @@
 .dropdown_5columns {
     margin: 0px auto;
     float: left;
+
     position: absolute;
-    left: -999em; /* Hides the drop down */
+    left: 0;
+    right: 0;
+    top: 10px;
+   visibility: hidden;
     text-align: left;
   margin-top: 36px;
     border-top: none;
-    z-index: 100000;
     box-shadow:0px 0px 19px 0px #333;
     padding-left: 4px;
     padding-right: 4px;
