@@ -81,10 +81,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 a.acc {
+    position: absolute;
+    margin-left: -9999px;
+}
 
-position:absolute;
-margin-left:-9999px;
-
+a.acc:focus {
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
 }
 
 ul#divisionMenu
