@@ -35,7 +35,7 @@
             <div id="topmenuleft">
 
             </div>
-            <nav>
+            <nav aria-label="top">
                 <a id="top">Top</a>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -72,10 +72,8 @@
 
         <!-- MEGA MENU -->
         <div id="mainmenu" class="bodywidthfull">
-            <div id="mainmenuleftcolumn">
-               
-            </div>
-            <nav>
+            <div id="mainmenuleftcolumn"></div>
+            <nav aria-label="primary">
                 <ul id="menu">
                     <li><a href="#">Home</a></li>
                     <li aria-haspopup="true">
@@ -136,9 +134,9 @@
             </nav>
         </div>
 
-        <!-- sidebar-->
         <div class="column-container">
-            <div class="column-1">
+            <!-- sidebar-->
+            <div class="column-1" role="complementary" aria-label="sidebar">
                 <div class="column-1-title">
                     <h3 class="lgd-links">Local Government Division</h3>
                 </div>
@@ -188,7 +186,7 @@
             </div>
 
             <div class="column-2">
-                <nav id="breadcrumbs">
+                <nav id="breadcrumbs" aria-label="breadcrumb">
                     <p>
                         <a href="#">Divisions </a>
                         &gt; 
@@ -196,7 +194,7 @@
                     </p>
                 </nav>
 
-                <section id="page-content">
+                <main id="page-content">
                     <h1>Local Government Division</h1>
                     <div id="content_div_187519">
                         <p></p>
@@ -220,9 +218,9 @@
                         <!-- <hr/> -->
 
                         <!-- article strip -->
-                        <div class="news-container">
+                        <section class="news-container" aria-labelledby="news-container-header">
                             <div class="links-box-header">
-                                <h2>News</h2>
+                                <h2 id="news-container-header">News</h2>
                             </div>
                             <ul>
                                 <li>
@@ -231,7 +229,7 @@
                                             <img src="./dpac_files/news.jpg" alt="Thumbnail of Dog Draft Control Amendment Bill 2019 factsheet">
                                         </figure>
                                         <header>
-                                            <a href="#">Amendments to the Dog Control Act 2000</a>
+                                            <h4><a href="#">Amendments to the Dog Control Act 2000</a></h4>
                                         </header>
                                         <p>The Government has released a consultation draft of the&nbsp;Dog Control
                                             Amendment Bill 2019&nbsp;and is seeking comment on the amendments.</p>
@@ -243,7 +241,7 @@
                                             <img src="./dpac_files/news.png" alt="Thumbnail of Review of Tasmania's Local Government Legislation Framework discussion paper">
                                         </figure>
                                         <header>
-                                            <a href="#">Local Government Reform Directions</a>
+                                            <h4><a href="#">Local Government Reform Directions</a></h4>
                                         </header>
                                         <p>The Tasmanian Government has released a Reform Directions Paper outlining the
                                             proposed reforms to Tasmania’s local government legislation framework.</p>
@@ -255,19 +253,21 @@
                                             <img src="./dpac_files/news(1).jpg" alt="Thumbnail of Draft Burial and Cremation Bill 2019 public consultation paper">
                                         </figure>
                                         <header>
-                                            <a href="#">Stage 2 Review of Tasmanian Cemeteries Legislation</a>
+                                            <h4><a href="#">Stage 2 Review of Tasmanian Cemeteries Legislation</a></h4>
                                         </header>
                                         <p>Stage 2 of the Review of Tasmanian Cemeteries Legislation has commenced.</p>
                                     </article>
                                 </li>
                             </ul>
-                        </div>
+                        </section>
                        
                         <!-- <hr> -->
 
                         <div id="links">
-                            <div class="links-box">
-                                <div class="links-box-header"><h2>Quick links</h2></div>
+                            <section class="links-box" aria-labelledby="quick-links-box-header">
+                                <div class="links-box-header">
+                                    <h2 id="quick-links-box-header">Quick links</h2>
+                                </div>
                                 <div class="links-box-content">
                                     <ul>
                                         <li><a href="#">Review of Tasmanian Cemeteries Legislation</a></li>
@@ -279,9 +279,11 @@
                                         <li><a href="#">Local Government Legislation Review</a></li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="links-box links-box--right">
-                                <div class="links-box-header"><h2>Publications</h2></div>
+                            </section>
+                            <section class="links-box links-box--right" aria-labelledby="publications-links-box-header">
+                                <div class="links-box-header">
+                                    <h2 id="publications-links-box-header">Publications</h2>
+                                </div>
                                 <div class="links-box-content">
                                     <ul>
                                         <li>
@@ -307,12 +309,12 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                         <p></p>
                     </div>
                     <script src="./dpac_files/bjqs-1.3.min.js"></script>
-                </section>
+                </main>
 
                 <div class="column-2-bottom">
                     <!-- ie needs this comment for small div heights -->
@@ -331,7 +333,7 @@
                 <img src="./dpac_files/logo_white.png" alt="Tasmanian Government logo">
             </div>
             <div id="footerright">
-                <nav>
+                <nav aria-label="footer">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Right To Information</a></li>
