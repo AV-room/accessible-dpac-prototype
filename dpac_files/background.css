@@ -143,7 +143,7 @@ hgroup#websitetitle h1 { position:absolute; left:-2222px;  }
   
 
 /* BREADCRUMBS */
-#breadcrumbs a { text-decoration: none; }
+#breadcrumbs a { font-size: 11px; text-decoration: none; }
 #breadcrumbs a:hover, #breadcrumbs a:focus { text-decoration: underline; }
 
 /* FOOTER */
