@@ -75,10 +75,18 @@
             <div id="mainmenuleftcolumn"></div>
             <nav aria-label="primary">
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li aria-haspopup="true">
-                        <a href="#">Divisions <img src="./dpac_files/arrow_down.png"
-                                alt=""></a>
+                    <li><a href="#" onfocus="toggleExpanded('divisions-menu-item', 'false')">Home</a></li>
+                    <li>
+                        <a 
+                            id="divisions-menu-item"
+                            href="#"
+                            aria-expanded="false"
+                            aria-haspopup="true" 
+                            onfocus="toggleExpanded('divisions-menu-item', 'true')" 
+                        >
+                            Divisions 
+                            <img src="./dpac_files/arrow_down.png" alt="">
+                        </a>
                         <div id="divisionsmenu" class="dropdown_2columns" aria-label="submenu">
                             <div class="col_2">
                                 <ul>
@@ -96,7 +104,7 @@
                                     <li><a href="#">Policy Division</a></li>
                                     <li><a href="#">Service Tasmania Unit</a></li>
                                     <li><a href="#">State Service Management Office</a></li>
-                                    <li><a href="#">Tasmanian Climate Change Office</a></li>
+                                    <li><a href="#" onblur="toggleExpanded('divisions-menu-item', 'false')">Tasmanian Climate Change Office</a></li>
                                 </ul>
                             </div>
 
@@ -104,9 +112,17 @@
                         </div>
                     </li>
                     <li><a href="#" aria-label="About the Department of Premier and Cabinet">About DPAC</a></li>
-                    <li><a href="#">The Premier</a></li>
-                    <li aria-haspopup="true">
-                        <a href="#" class="last" aria-label="Other Department of Premier and Cabinet Sites">Other DPAC Sites <img src="./dpac_files/arrow_down.png" alt=""></a>
+                    <li><a href="#" onfocus="toggleExpanded('sites-menu-item', 'false')">The Premier</a></li>
+                    <li>
+                        <a 
+                            id="sites-menu-item"
+                            href="#" 
+                            class="last" 
+                            aria-label="Other Department of Premier and Cabinet Sites"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            onfocus="toggleExpanded('sites-menu-item', 'true')"
+                        >Other DPAC Sites <img src="./dpac_files/arrow_down.png" alt=""></a>
                         <div id="sitesmenu" class="dropdown_2columns" aria-label="submenu">
                             <div class="col_2">
                                 <ul>
@@ -123,7 +139,7 @@
                                     <li><a href="#">Tasmanian Government Media Releases</a></li>
                                     <li><a href="#">Register of Lobbyists</a></li>
                                     <li><a href="#">Tasmanian Legislation</a></li>
-                                    <li><a href="#">DPAC social media pages</a></li>
+                                    <li><a href="#" onblur="toggleExpanded('sites-menu-item', 'false')">DPAC social media pages</a></li>
                                 </ul>
                             </div>
                             <br style="clear:left">
@@ -137,46 +153,50 @@
         <div class="column-container">
             <!-- sidebar-->
             <div class="column-1" role="complementary" aria-label="sidebar">
-                <div class="column-1-title">
-                    <h3 class="lgd-links">Local Government Division</h3>
-                </div>
-                <ul id="divisionMenu">
-                    <li> <a href="#">About the Local Government Division</a></li>
-                    <li> <a href="#">What is local government?</a></li>
-                    <li> <a href="#">Local Government Legislation Review</a></li>
-                    <li> <a href="#">Tasmanian Council directory</a></li>
-                    <li> <a href="#">Local Government Elections</a></li>
-                    <li> <a href="#">Local Government Board Review - Sorell and Tasman Councils</a></li>
-                    <li> <a href="#">Review of Tasmanian Cemeteries Legislation</a></li>
-                    <li> <a href="#">Burial and Cremation Act 2002</a></li>
-                    <li> <a href="#">Amendments to Local Government Act and Model Code of Conduct</a></li>
-                    <li> <a href="#">Good Governance </a></li>
-                    <li> <a href="#">Local Government Code of Conduct</a></li>
-                    <li> <a href="#">Investigations</a></li>
-                    <li> <a href="#">Making a complaint</a></li>
-                    <li> <a href="#">Measuring Tasmanian Local Government Performance</a></li>
-                    <li> <a href="#">Statewide Partnership Agreement on Communication and Consultation</a></li>
-                    <li> <a href="#">Board of Inquiry - Glenorchy City Council</a></li>
-                    <li> <a href="#">Board of Inquiry - Huon Valley Council</a></li>
-                    <li> <a href="#">Local Government Reform </a></li>
-                    <li> <a href="#">Local Government Legislation and Reviews</a></li>
-                    <li> <a href="#">Premier's Local Government Council</a></li>
-                    <li> <a href="#">Local Government Board</a></li>
-                    <li> <a href="#">By-law directory</a></li>
-                    <li> <a href="#">Contact us</a></li>
-                </ul>
-
-                <h3 class="contact">Contact Details</h3>
-                <p><b>By phone</b><br>
-                    Contact the Local Government Division on 03 6232 7022 or Service Tasmania on 1300 135 513.<br>
-                </p>
-                <p><b>Our staff</b><br>
-                    Use the <a href="#">Tasmanian Government Directory</a> to find staff
-                    contact details</p>
-                <p><b>Social media</b><br>
-                    Follow our <a href="#">social media</a> accounts to
-                    keep up to date with specific programs and initiatives.</p>
-
+                <section aria-labelledby="division-menu-header">
+                    <div class="column-1-title">
+                        <h3 id="division-menu-header" class="lgd-links">Local Government Division</h3>
+                    </div>
+                    <ul id="divisionMenu">
+                        <li> <a href="#">About the Local Government Division</a></li>
+                        <li> <a href="#">What is local government?</a></li>
+                        <li> <a href="#">Local Government Legislation Review</a></li>
+                        <li> <a href="#">Tasmanian Council directory</a></li>
+                        <li> <a href="#">Local Government Elections</a></li>
+                        <li> <a href="#">Local Government Board Review - Sorell and Tasman Councils</a></li>
+                        <li> <a href="#">Review of Tasmanian Cemeteries Legislation</a></li>
+                        <li> <a href="#">Burial and Cremation Act 2002</a></li>
+                        <li> <a href="#">Amendments to Local Government Act and Model Code of Conduct</a></li>
+                        <li> <a href="#">Good Governance </a></li>
+                        <li> <a href="#">Local Government Code of Conduct</a></li>
+                        <li> <a href="#">Investigations</a></li>
+                        <li> <a href="#">Making a complaint</a></li>
+                        <li> <a href="#">Measuring Tasmanian Local Government Performance</a></li>
+                        <li> <a href="#">Statewide Partnership Agreement on Communication and Consultation</a></li>
+                        <li> <a href="#">Board of Inquiry - Glenorchy City Council</a></li>
+                        <li> <a href="#">Board of Inquiry - Huon Valley Council</a></li>
+                        <li> <a href="#">Local Government Reform </a></li>
+                        <li> <a href="#">Local Government Legislation and Reviews</a></li>
+                        <li> <a href="#">Premier's Local Government Council</a></li>
+                        <li> <a href="#">Local Government Board</a></li>
+                        <li> <a href="#">By-law directory</a></li>
+                        <li> <a href="#">Contact us</a></li>
+                    </ul>
+                </section>
+                
+                <section aria-labelledby="contact-details-header">
+                    <h3 id="contact-details-header" class="contact">Contact Details</h3>
+                    <p><b>By phone</b><br>
+                        Contact the Local Government Division on 03 6232 7022 or Service Tasmania on 1300 135 513.<br>
+                    </p>
+                    <p><b>Our staff</b><br>
+                        Use the <a href="#">Tasmanian Government Directory</a> to find staff
+                        contact details</p>
+                    <p><b>Social media</b><br>
+                        Follow our <a href="#">social media</a> accounts to
+                        keep up to date with specific programs and initiatives.</p>
+                </section>
+                
                 <div class="column-1-pagecurl">
                     <!-- ie needs this comment for small div heights -->
                 </div>
@@ -229,7 +249,7 @@
                                             <img src="./dpac_files/news.jpg" alt="Thumbnail of Dog Draft Control Amendment Bill 2019 factsheet">
                                         </figure>
                                         <header>
-                                            <h4><a href="#">Amendments to the Dog Control Act 2000</a></h4>
+                                            <h3><a href="#">Amendments to the Dog Control Act 2000</a></h3>
                                         </header>
                                         <p>The Government has released a consultation draft of the&nbsp;Dog Control
                                             Amendment Bill 2019&nbsp;and is seeking comment on the amendments.</p>
@@ -241,7 +261,7 @@
                                             <img src="./dpac_files/news.png" alt="Thumbnail of Review of Tasmania's Local Government Legislation Framework discussion paper">
                                         </figure>
                                         <header>
-                                            <h4><a href="#">Local Government Reform Directions</a></h4>
+                                            <h3><a href="#">Local Government Reform Directions</a></h3>
                                         </header>
                                         <p>The Tasmanian Government has released a Reform Directions Paper outlining the
                                             proposed reforms to Tasmania’s local government legislation framework.</p>
@@ -253,7 +273,7 @@
                                             <img src="./dpac_files/news(1).jpg" alt="Thumbnail of Draft Burial and Cremation Bill 2019 public consultation paper">
                                         </figure>
                                         <header>
-                                            <h4><a href="#">Stage 2 Review of Tasmanian Cemeteries Legislation</a></h4>
+                                            <h3><a href="#">Stage 2 Review of Tasmanian Cemeteries Legislation</a></h3>
                                         </header>
                                         <p>Stage 2 of the Review of Tasmanian Cemeteries Legislation has commenced.</p>
                                     </article>
@@ -355,5 +375,12 @@
     <script src="./dpac_files/plugins.js"></script>
     <script src="./dpac_files/jquery.cookie.js"></script>
     <script src="./dpac_files/jquery.hoverIntent.minified.js"></script>
+    <script>
+        function toggleExpanded(elementId, newExpandedState) {
+            if (document.getElementById(elementId).getAttribute("aria-expanded") !== newExpandedState) {
+                document.getElementById(elementId).setAttribute("aria-expanded", newExpandedState);
+            }
+        }
+    </script>
 </body>
 </html>
