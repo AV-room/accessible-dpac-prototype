@@ -36,7 +36,7 @@
 
 #mainmenu > nav > ul#menu > li:focus,
 #mainmenu > nav > ul#menu > li:focus-within {
-    box-shadow: inset 0px -8px 0px -4px #ccc;
+    box-shadow: inset 0px -8px 0px -4px aliceblue;
 }
 
 #mainmenu > nav > ul#menu > li:hover,
@@ -93,7 +93,6 @@
     text-align: left;
   margin-top: 36px;
     border-top: none;
-    box-shadow:0px 0px 19px 0px #333;
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 4px;
